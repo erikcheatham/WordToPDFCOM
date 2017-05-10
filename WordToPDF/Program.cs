@@ -19,11 +19,11 @@ namespace WordToPDF
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1 for Single Document Process Or 2 For Directory Process");
+            Console.WriteLine("Enter 1 for Single Document Process Or 2 For Directory Process And Press Enter");
             string option = Console.ReadLine();
             if (option == "1")
             {
-                Console.WriteLine("Hello Drag and Drop the Word Doc file onto the screen and press enter");
+                Console.WriteLine("Drag And Drop The Word Doc file Onto The Screen And Press Enter");
                 string filepath = Console.ReadLine().Replace("\"", "");
                 string newFilePath = filepath.Remove(filepath.LastIndexOf('.'));
                 newFilePath = string.Concat(newFilePath, DateTime.Now.ToString().Replace(":", "_").Replace("/", "") + ".pdf").Replace(" ", "_");
@@ -108,7 +108,7 @@ namespace WordToPDF
             }
             else if (option == "2")
             {
-                Console.WriteLine("Hello Drag and Drop the Word Doc Directory onto the screen and press enter");
+                Console.WriteLine("Drag And Drop The Word Doc Directory Onto The Screen And Press Enter");
                 string directory = Console.ReadLine().Replace("\"", "");
                 if (Directory.Exists(directory))
                 {
