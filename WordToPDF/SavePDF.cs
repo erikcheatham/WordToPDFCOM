@@ -27,7 +27,7 @@ namespace WordToPDF
                 bool keepIRM = true;
                 bool docStructureTags = true;
                 bool bitmapMissingFonts = true;
-                bool useISO19005_1 = false;
+                bool useISO19005_1 = true;
                 bool openAfterExport = false;
 
                 //If Export Range Is Set
