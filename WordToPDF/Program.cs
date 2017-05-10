@@ -32,7 +32,10 @@ namespace WordToPDF
                     Word.ApplicationClass application = new Word.ApplicationClass();
                     Word.Document Doc = application.Documents.Open(filepath);
 
-                    SingleDoc(application, Doc, newFilePath);
+                    string success = SingleDoc(application, Doc, newFilePath);
+                    Console.WriteLine(success);
+                    Console.WriteLine("Press Enter To Finish");
+                    Console.ReadLine();
 
                     #region OldCode
                     //int fileLen;

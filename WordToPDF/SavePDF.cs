@@ -58,7 +58,9 @@ namespace WordToPDF
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("saveaspdf: " + ex.ToString());
+                Console.WriteLine("Save PDF Failed With: " + ex.ToString());
+                Console.WriteLine("Press Enter To Continue/Exit");
+                Console.ReadLine();
                 throw (ex);
             }
             return (retval);
